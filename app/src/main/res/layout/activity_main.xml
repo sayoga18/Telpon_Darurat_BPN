@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:background="@android:color/white"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/judulatas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:text="NOMOR DARURAT KOTA BALIKPAPAN"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="15dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/judulatas">
+
+        <LinearLayout
+            android:id="@+id/namagrup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:id="@+id/akun"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Tentang Aplikasi"
+                android:background="@android:color/white"
+                android:textColor="@android:color/black"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/rumahsakit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Rumah Sakit"
+                android:textColor="@android:color/black"
+                android:textAlignment="center"
+                android:background="@android:color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/grupbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/namagrup">
+
+            <ImageButton
+                android:id="@+id/button1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@mipmap/akun"
+                android:background="@android:color/white"/>
+
+            <ImageButton
+                android:id="@+id/button2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@mipmap/hospital"
+                android:background="@android:color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/namagrup2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/grupbutton">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Polres"
+                android:background="@android:color/white"
+                android:textColor="@android:color/black"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Pemadam Kebakaran"
+                android:textColor="@android:color/black"
+                android:textAlignment="center"
+                android:background="@android:color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/grupbutton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/namagrup2"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+        <ImageButton
+            android:id="@+id/button3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@mipmap/rumah_sakit"
+            android:background="@android:color/white"/>
+
+        <ImageButton
+            android:id="@+id/button4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@mipmap/pemadam"
+            android:background="@android:color/white"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>
